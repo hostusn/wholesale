@@ -1,0 +1,86 @@
+
+#folderi i fajlovi kao na primer .idea - vezan za editor (primetices ako koristis phpstorm da se ovaj folder napravi u rootu projekta) treba uvek sklanjati i staviti u fitignore da ne bi dolazilo ko conflikta a za projekat su totalno nebitni. 
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+/.idea/
+
+
+# wordpress specific
+
+#fajl koji obavezno mora biti u gitignoru jer ce morati da se menja u lokalu da bi mogli sajt da podignemo lokalno
+wp-config.php
+
+#slike nam ne trebaju u gitu - premive mesta i menjaju se
+wp-content/uploads/
+
+#bilo koji cache folderi od plugina ili bilo kog drugog cache sistema trebaju biti u gitignoru -- jedna od preporuka je da ukoliko je plugin upitnaju u lokalu bude deaktiviran
+wp-content/cache/*
+wp-content/cache/supercache/*
+
+#ako nasa tema koju koristimo ima neki custom cache (na primer script cache) njega isto trebamo da stavim o ovde jer nam to ne treba
+wp-content/themes/gamble/scripts/cache
+
+#backupi bazi - ne bi ni trebalo da se nalaze u folderu sa projektom ali ukoliko ih ima iz nekog razloga trebaju da budu u gitignoru
+wp-content/mysql.sql
+wp-content/backup-db/*
+
+#logovi pluginova
+wp-content/ewww/debug.log
+
+#tema koja se NE koristi moze biti u gitignoru u slucaju da sajt ima vise tema. Jer nas ona ne interesuje i ne utice na projekat (voditi racuna o childe temama)
+/wp-content/themes/twentyten
+
+
+# large/disallowed file types
+# a CDN should be used for these
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
+
+#plugini koji imaju svoju bazu - jedan od odlicnih primera je geotarget, da ne bismo kroz git vukli njegovu bazu u kojoj su IP adrese i regioni kojima pripadaju
+wp-content/plugins/geotarget/download
+wp-content/plugins/geotarget/db
+
+#premium plugini
+wp-content/plugins/wpml-translation-management/
+wp-content/plugins/wpml-string-translation/
+wp-content/plugins/wpml-media-translation/
+wp-content/plugins/sitepress-multilingual-cms/
+
+#debug logovi iz plugina
+wp-content/plugins/ewww-image-optimizer/debug.log
+
