@@ -1,0 +1,26 @@
+.helendo-images-masonry {
+	margin: -5px;
+
+	.images {
+		padding: 5px;
+		float: left;
+	}
+
+	.item-wrapper {
+		overflow: hidden;
+
+		img {
+			transition: .4s;
+		}
+
+		&:hover {
+			img {
+				transform: scale(1.07);
+			}
+
+		}
+	}
+	//.gutter-sizer{
+	//	width:10px;
+	//}
+}

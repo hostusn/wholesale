@@ -1,0 +1,289 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+.comments-title {
+	font-size: 24px;
+	font-weight: 500;
+	color: $color__darker;
+	padding: 0;
+	margin: 0;
+	
+	&.has-comments {
+		margin-top: 60px;
+		padding-bottom: 7px;
+	}
+}
+
+.comment-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+	&.has-comments {
+		border-top: 1px solid #e1e1e1;
+	}
+
+	.comment-body{
+		border-bottom: 1px solid #e1e1e1;
+	}
+
+	li {
+		float: left;
+		clear: both;
+		width: 100%;
+		
+		.comment-respond {
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+		
+		&.comment .comment-meta {
+			float: left;
+			margin-top: 60px;
+			max-width: 70px;
+		}
+		
+		.reply {
+			margin-top: 4px;
+		}
+		
+		.comment-edit-link,
+		.comment-reply-link {
+			color: #323232;
+			font-weight: 500;
+			font-style: normal;
+			display: inline-block;
+			padding-right: 15px;
+			
+			&:hover {
+				color: #cacaca ;
+			}
+		}
+		.comment-reply-link{
+			&:after{
+				content: "\f101";
+				font-family: FontAwesome;
+				margin-left: 6px;
+				font-size: 12px;
+				transform: translateY(-1px);
+				display: inline-block;
+			}
+		}
+		.comment-metadata {
+			overflow: hidden;
+			margin-bottom: 24px;
+		}
+		
+		.comment-edit-link {
+			&:after{
+				content: "\f044";
+				font-family: FontAwesome;
+				margin-left: 10px;
+			}
+		}
+		
+		&.comment .comment-content {
+			margin-left: 100px;
+		}
+		
+		.comment-content {
+			padding: 43px 0 48px;
+			position: relative;
+			
+			.comment-desc {
+				padding: 10px 0 5px;
+			}
+			
+			.date {
+				font-size: 14px;
+				text-transform: initial;
+			}
+			
+			a {
+				word-wrap: break-word;
+			}
+			
+			.fn {
+				color: #323232;
+				display: block;
+				font-weight: 500;
+				a {
+					color: #333;
+					font-style: normal;
+					font-size: 20px;
+				}
+			}
+		}
+
+		.comment-author{
+			img{
+				border-radius: 50%;
+			}
+		}
+	}
+	
+	.comment-respond {
+		margin-bottom: 50px;
+	}
+	
+	&:after {
+		clear: both;
+		content: "";
+		display: block;
+	}
+	
+	.children {
+		list-style: none;
+		padding: 0 0 0 80px;
+		
+		article {
+			border-top-width: 0;
+		}
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	.depth-5 {
+		.children {
+			padding-left: 0;
+		}
+	}
+	
+}
+
+.comments-area {
+	.comment-desc {
+		padding: 15px 0 5px;
+		color: #666;
+	}
+	
+	.date {
+		color: #666;
+	}
+	
+	.comments-links {
+		margin-bottom: 60px;
+		text-align: center;
+		
+		.page-numbers {
+			font-size: 18px;
+			padding: 0 8px;
+			color: #999;
+			
+			&.current {
+				color: $color__darker;
+			}
+		}
+	}
+}
+
+.comment-respond {
+	clear: both;
+	padding-top: 60px;
+
+	.single-post & {
+		margin-bottom: 40px;
+	}
+	
+	.logged-in-as {
+		margin-bottom: 10px;
+		a {
+			color: $color__darker;
+			
+			&:hover {
+				color: $color__primary;
+			}
+		}
+	}
+	
+	.comment-reply-title {
+		font-weight: 500;
+		color: $color__darker;
+		padding-bottom: 23px;
+		margin: 0;
+		
+		a {
+			color: #0099cc;
+			padding-left: 15px;
+		}
+	}
+	
+	.comment-notes {
+		display: none;
+	}
+	
+	input[type=text],
+	input[type=email],
+	textarea {
+		border: 1px solid #cfcfcf;
+		transition: 0.5s !important;
+		outline: none;
+		padding: 15px;
+		width: 100%;
+		color: $color__darker;
+		font-size: 14px;
+
+	}
+	textarea {
+		height: 200px;
+		font-size: 14px !important;
+	}
+	
+	p {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	.comment-form-author,
+	.comment-form-email{
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.comment-form-email {
+		padding-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.comment-form-comment {
+		margin-bottom: 12px;
+	}
+	
+	.comment-form-author {
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+
+	.comment-form-url {
+		padding-right: 0;
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+	
+	.comment-message {
+		margin-top: 20px;
+		color: red;
+		min-height: 30px;
+	}
+	
+	.form-submit {
+		clear: both;
+		position: relative;
+
+		.submit{
+			height: 40px;
+			line-height: 40px;
+			padding: 0 20px;
+		}
+	}
+}
+
+.comment-awaiting-moderation {
+	display: block;
+}

@@ -1,0 +1,72 @@
+.maintenance-mode {
+	.site-header,
+	.site-footer,
+	.page-header {
+		display: none;
+	}
+
+	.maintenance-header {
+		display: block;
+	}
+
+	.site-content {
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 100vh;
+
+		> .container {
+			height: 100%;
+
+			> .row {
+				height: 100%;
+			}
+		}
+	}
+
+	.site-content-container,
+	.content-area,
+	.site-main {
+		height: 100%;
+	}
+
+	.site-main {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.maintenance-layout-fullscreen {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	.text-light .mc4wp-form {
+		input,
+		select,
+		textarea {
+			padding-left: 30px;
+			padding-right: 30px;
+			border-width: 0;
+		}
+
+		input[type=text],
+		input[type=email],
+		select {
+			min-width: 360px;
+		}
+
+		input[type=submit],
+		input[type=reset],
+		button {
+			padding: 0 50px;
+		}
+	}
+}
+
+.maintenance-header {
+	padding: 60px 0;
+
+	.header-items {
+		width: 100%;
+	}
+}

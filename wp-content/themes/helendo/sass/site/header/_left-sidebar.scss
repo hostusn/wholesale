@@ -1,0 +1,260 @@
+.header-left-sidebar {
+	@include font-size(14/16);
+	width: 300px;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
+	border-right: 1px solid #efefef;
+
+	.widget {
+		margin-bottom: 80px;
+
+		.widget-title {
+			@include font-size(18/16);
+			padding-bottom: 46px;
+		}
+
+		.mc4wp-form {
+			position: relative;
+
+			input[type="submit"] {
+				position: absolute;
+				top: 2px;
+				right: 0;
+				width: 40px;
+				height: 40px;
+				background-color: transparent;
+				text-indent: -9999px;
+				margin: 0;
+				border: 0;
+				padding: 0;
+			}
+
+			input[type="text"],
+			input[type="email"]{
+				color: #666666;
+				border-width: 0 0 1px 0;
+				border-color: #d6d9c6;
+				padding: 8px 30px 8px 0;
+				height: auto;
+				width: 100%;
+				@include font-size(14/16);
+			}
+
+			&:after {
+				content: '\24';
+				font-family: ElegantIcons;
+				position: absolute;
+				right: 0;
+				top: 10px;
+				color: #000;
+				@include font-size(14/16);
+			}
+
+			::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				color: #666666;
+				@include font-size(14/16);
+			}
+			::-moz-placeholder { /* Firefox 19+ */
+				color: #666666;
+				@include font-size(14/16);
+			}
+			:-ms-input-placeholder { /* IE 10+ */
+				color: #666666;
+				@include font-size(14/16);
+			}
+			:-moz-placeholder { /* Firefox 18- */
+				color: #666666;
+				@include font-size(14/16);
+			}
+		}
+	}
+
+	.helendo-social-links-widget {
+		color: #666666;
+
+		.socials-desc {
+			margin-bottom: 20px;
+		}
+
+		ul {
+			margin: 0 -10px;
+
+			li {
+				padding: 0 10px;
+			}
+		}
+	}
+
+	.helendo-language-currency {
+		justify-content: unset;
+
+		span.current {
+			padding-right: 15px;
+			font-size: 14px;
+			font-weight: 500;
+			margin-top: 0;
+
+			.toggle-children {
+				right: -2px;
+			}
+		}
+
+		.list-dropdown {
+			padding: 0 20px 20px 20px;
+
+			&:after {
+				height: 10px;
+				transform: unset;
+				top: 6px;
+			}
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+
+			&:hover ul {
+				top: 100%;
+			}
+		}
+
+		ul {
+			left: 0;
+			top: 120%;
+		}
+	}
+
+	ul.menu {
+		line-height: 2;
+
+		li {
+			padding: 4px 0;
+			list-style: none;
+
+			a {
+				font-size: 14px;
+				display: block;
+				font-weight: 500;
+				text-transform: uppercase;
+				position: relative;
+
+				.toggle-menu-children {
+					position: absolute;
+					line-height: 1;
+					right: 0;
+					top: 5px;
+				}
+
+				&:after {
+					display: none;
+				}
+
+				&:hover {
+					color: #666666;
+				}
+			}
+
+			&.menu-item-has-children {
+				a {
+					padding-right: 20px;
+				}
+			}
+
+			&.active > a {
+				color: #666666;
+			}
+		}
+
+		.sub-menu {
+			display: none;
+			padding-left: 10px;
+			margin: 14px 0 20px;
+
+			li {
+				a {
+					font-size: 14px;
+					color: #999999;
+					text-transform: capitalize;
+					font-weight: 400;
+					line-height: 1.4;
+
+					.toggle-menu-children {
+						top: 2px;
+					}
+
+					&:hover {
+						color: #000;
+					}
+				}
+
+				&.active > a {
+					color: #000;
+				}
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+
+			.sub-menu {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.logo {
+		margin-bottom: 90px;
+	}
+
+	.widget .mc4wp-form input,
+	.widget .mc4wp-form select,
+	.widget .mc4wp-form textarea,
+	.widget .mc4wp-form button {
+		margin-top: 0;
+	}
+}
+
+.header-left-sidebar__content {
+	height: 100%;
+	overflow-y: auto;
+	padding: 50px 60px 0 60px;
+}
+
+.header-left-sidebar__content::-webkit-scrollbar {
+	display: none;
+}
+
+.header-left-sidebar__content-header,
+.header-left-sidebar__content-footer {
+	height: 50px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	z-index: 999;
+}
+
+.header-left-sidebar__content-header {
+	top: 0;
+}
+
+.header-left-sidebar__content-footer {
+	bottom: 0;
+}
+
+@media (max-width: 1499px) {
+	.page-template-template-home-left-sidebar {
+		.container {
+			width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}

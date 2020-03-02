@@ -1,0 +1,106 @@
+.helendo-icon-box {
+	.main-icon {
+		.header-icon {
+			float: left;
+			margin-right: 26px;
+			.helendo-icon {
+				line-height: 1;
+				font-size: 36px;
+				color: $color__darker;
+			}
+		}
+		.iconbox-title {
+			.title {
+				font-size: 18px;
+				font-weight: 500;
+				color: $color__darker;
+				margin: 0;
+				padding-top: 10px;
+			}
+		}
+		.iconbox-desc {
+			clear: both;
+			margin-top: 20px;
+			line-height: 24px;
+		}
+	}
+	&.style-3, &.style-4 {
+		.main-icon {
+			display: flex;
+			.iconbox-title {
+				h3.title {
+					padding-top: 10px;
+					line-height: 1;
+				}
+			}
+			.iconbox-desc {
+				margin-top: 12px;
+			}
+		}
+		&.hover-2 {
+			.main-icon {
+				.header-icon {
+					transition: .5s;
+					.helendo-icon {
+						color: $color__primary;
+						font-size: 48px;
+					}
+				}
+				.iconbox-desc {
+					margin-top: 7px;
+				}
+			}
+		}
+		&.row-1 {
+			.main-icon {
+				.iconbox-content {
+					.iconbox-title {
+						.title {
+							padding-top: 0;
+						}
+					}
+				}
+			}
+		}
+		&.row-2 {
+			.main-icon {
+				display: block;
+				.iconbox-content {
+					.iconbox-title {
+						.title {
+							padding-top: 10px;
+						}
+					}
+					.iconbox-desc {
+						margin-top: 35px;
+					}
+				}
+			}
+		}
+	}
+
+	&.style-4 {
+		.main-icon {
+			display: flex;
+			.header-icon {
+				margin-right: 30px;
+				.helendo-icon {
+					float: left;
+					font-size: 38px;
+
+				}
+			}
+			.iconbox-title {
+				.title {
+					padding-top: 0;
+					font-size: 20px;
+				}
+			}
+			.iconbox-content {
+				float: left;
+				width: auto;
+				margin-top: 5px;
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.header-phone {
+	@include font-size(18/16);
+	color: #000;
+
+	i {
+		color: #666666;
+		padding-right: 5px;
+	}
+}

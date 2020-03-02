@@ -1,0 +1,296 @@
+.search-modal {
+	.helendo-container {
+		margin-left: 120px;
+		margin-right: 120px;
+	}
+
+	.modal-title {
+		@include font-size(36/16);
+		margin: 0;
+		font-weight: 400;
+	}
+
+	.close-modal {
+		@include font-size(24/16);
+		color: #000;
+	}
+
+	.modal-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 68px;
+		margin-top: 60px;
+		transform: translateY(30px);
+		opacity: 0;
+		transition-delay: 0.5s;
+		transition: all 0.5s ease 0.5s;
+	}
+
+	.instance-search {
+		position: relative;
+	}
+
+	.modal-content {
+		.search-results {
+			margin-top: 75px;
+		}
+
+		ul.products {
+			li.product {
+				margin-bottom: 75px;
+			}
+		}
+	}
+
+	.product-cats {
+		transition: all 0.5s ease 0.5s;
+		text-align: center;
+		margin-bottom: 73px;
+		transform: translateY(30px);
+		opacity: 0;
+		transition-delay: 0.7s;
+
+		label {
+			font-weight: 400;
+			padding: 0 18px;
+			cursor: pointer;
+			font-size: 16px;
+			color: #000;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+
+			span {
+				transition: 0.3s;
+
+				&:hover {
+					color: #999999;
+				}
+			}
+		}
+
+		input {
+			display: none;
+		}
+
+		input:checked + span {
+
+			color: #999999;
+		}
+	}
+
+	.search-fields {
+		transition: transform 0.5s ease 0.6s, opacity 0.5s ease 0.6s, border 0.5s;
+		position: relative;
+		transform: translateY(30px);
+		opacity: 0;
+		transition-delay: 0.9s;
+
+		.btn-submit,
+		.search-icon {
+			position: absolute;
+			top: 6px;
+			right: 0;
+		}
+
+		.search-icon {
+			color: #000;
+			font-size: 24px;
+		}
+
+		.btn-submit {
+			opacity: 0;
+			width: 30px;
+			padding: 0;
+			height: 30px;
+			z-index: 10;
+		}
+	}
+
+	.search-field {
+		width: 100%;
+		padding: 10px 35px 10px 0;
+		border-width: 0 0 1px 0;
+		border-color: rgba(0, 0, 0, 0.25);
+		background-color: transparent;
+		transition: 0.5s;
+
+		&:focus {
+			border-bottom-color: #000;
+		}
+	}
+
+	&.open {
+		.product-cats,
+		.search-fields,
+		.modal-header,
+		.modal-footer,
+		.search-results {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	&:focus {
+		outline: 0;
+	}
+
+	&.helendo-modal {
+		div.loading {
+			position: absolute;
+			right: 8px;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+			opacity: 0;
+
+			.helendo-loader {
+				width: 18px;
+				height: 18px;
+				display: block;
+
+				&:after {
+					@include helendo-small-loading();
+					position: absolute;
+					width: 17px;
+					height: 17px;
+				}
+			}
+		}
+
+		.view-more {
+			margin-bottom: 90px;
+			display: none;
+
+			a {
+				@include btn-primary();
+			}
+		}
+
+		&.searching {
+			.loading {
+				opacity: 1;
+			}
+
+			.search-icon {
+				opacity: 0;
+			}
+		}
+
+		&.searched {
+			.view-more {
+				display: block;
+			}
+
+			.search-results {
+				display: block;
+				z-index: 999;
+				opacity: 1;
+			}
+		}
+
+		.not-found {
+			text-align: center;
+			font-size: 28px;
+			color: #000;
+		}
+
+		li.not-found {
+			flex: 1;
+			padding: 0 15px;
+		}
+
+		.modal-content__search-results article .entry-header img {
+			margin-bottom: 0;
+		}
+		
+		.helendo-post-list {
+			.blog-wapper {
+				padding: 16px 0;
+				color: #000;
+				border-bottom: 1px solid #d7d7d7;
+				max-width: 100%;
+				margin: 0;
+				display: flex;
+				align-items: center;
+				
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+			
+			.post-thumbnail {
+				margin-bottom: 0;
+			}
+			
+			.entry-title {
+				@include font-size(1);
+				font-weight: 400;
+				margin: 0;
+				padding: 0;
+				line-height: 1.2;
+				display: block !important;
+				visibility: visible !important;
+				
+				&:after,
+				&:before {
+					display: none;
+				}
+			}
+			
+			img {
+				width: 60px;
+				min-width: 60px;
+				margin-right: 20px;
+			}
+			
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+
+	.modal-content__search-results {
+		article {
+			margin-bottom: 70px;
+
+			.entry-header {
+				img {
+					margin-bottom: 10px;
+				}
+			}
+
+			.entry-title {
+				font-size: 20px;
+				display: block !important;
+				visibility: visible !important;
+			}
+
+			.entry-meta {
+				padding-top: 10px;
+				margin-top: 5px;
+			}
+
+			.entry-content,
+			.entry-footer {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (min-width: 1366px) {
+	.search-modal {
+		form.instance-search,
+		.modal-content__search-results {
+			padding-left: 150px;
+			padding-right: 150px;
+		}
+	}
+}

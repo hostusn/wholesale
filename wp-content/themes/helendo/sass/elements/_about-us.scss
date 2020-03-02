@@ -1,0 +1,59 @@
+.helendo-about-us {
+	.description {
+		color: $color__darker;
+		font-family: $font__third;
+		font-size: 18px;
+		line-height: 36px;
+	}
+	.read-more {
+		font-size: 18px;
+		color: $color__darker;
+		font-weight: 500;
+		margin-top: 77px;
+		display: inline-block;
+		span {
+			font-size: 14px;
+		}
+	}
+	&.text-left {
+		text-align: left;
+	}
+
+	&.text-center {
+		text-align: center;
+	}
+
+	&.text-right {
+		text-align: right;
+	}
+	&.style-1 {
+		.read-more {
+			margin-top: 63px;
+		}
+	}
+	&.style-2 {
+		padding: 0 60px;
+		.description {
+			font-family: $font__main;
+			text-align: justify;
+			color: #555555;
+			font-size: 18px;
+			line-height: 30px;
+		}
+	}
+	&.style-3 {
+		.title {
+			font-family: $font__special;
+			font-size: 60px;
+			line-height: 26px;
+			margin-bottom: 50px;
+		}
+		.description {
+			font-family: $font__main;
+			font-size: 16px;
+			line-height: 30px;
+			color: $color__text-main;
+		}
+	}
+}
+

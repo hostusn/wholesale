@@ -1,0 +1,96 @@
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	color: #000;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	padding-left: 35px;
+	padding-top: 4px;
+	margin: 35px;
+	margin-right: 0;
+	position: relative;
+	
+	&:before {
+		content:"\7b";
+		font-size: 28px;
+		font-family: ElegantIcons;
+		transform: rotateY(180deg);
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	p{
+		margin: 0;
+	}
+	
+	cite {
+		display: block;
+		line-height: 1;
+		margin-top: 1em;
+	}
+}
+
+.wp-block-quote,
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large{
+	margin: 35px;
+}
+
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large {
+	padding-left: 35px;
+}
+
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	border-left: 0;
+	padding-left: 35px;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: $color__background-pre;
+	font-family: $font__pre;
+	@include font-size(0.9375);
+	line-height: $font__line-height-pre;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+	margin: 15px 0;
+}
+
+code, kbd, tt, var {
+	font-family: $font__code;
+	@include font-size(0.9375);
+}
+
+code {
+	color: #23282d;
+	border: 1px solid #eee;
+	background-color: #eee;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted $color__border-abbr;
+	cursor: help;
+}
+
+mark, ins {
+	background: $color__background-ins;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}

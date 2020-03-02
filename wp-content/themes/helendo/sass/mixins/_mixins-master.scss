@@ -1,0 +1,169 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns);
+}
+
+// Button
+@mixin btn-primary() {
+	@include font-size(1);
+	font-weight: 500;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 25px;
+	background-color: #000;
+	border: 0;
+	box-shadow: none;
+	transition: 0.5s;
+	
+	&:hover {
+		color: #fff;
+		border: 0;
+		box-shadow: none;
+		outline: none;
+		background-color: #000;
+	}
+}
+
+@mixin btn-secondary() {
+	@include font-size(1);
+	font-weight: 500;
+	color: #000;
+	text-align: center;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 25px;
+	background-color: #fff;
+	border: 1px solid;
+	box-shadow: none;
+	transition: 0.5s;
+	
+	&:hover {
+		color: #000;
+		box-shadow: none;
+		outline: none;
+		background-color: #fff;
+	}
+}
+
+@mixin helendo-loading() {
+	position: relative;
+	&:before {
+		@include helendo-small-loading();
+		border-width: 2px;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@mixin helendo-small-loading() {
+	border-width: 1px;
+	border-color: #666 #666 #666 transparent;
+	border-radius: 50%;
+	border-style: solid;
+	animation: sp-spin-fast 2s linear infinite;
+	content: " ";
+	width: 14px;
+	height: 14px;
+	font-weight: 400;
+}
+
+// Spin
+@keyframes sp-spin-fast {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+		animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+	}
+	50% {
+		-webkit-transform: rotate(900deg);
+		transform: rotate(900deg);
+		animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+	}
+	to {
+		-webkit-transform: rotate(1800deg);
+		transform: rotate(1800deg)
+	}
+}
+
+@-webkit-keyframes sp-spin-fast {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+	}
+	50% {
+		-webkit-transform: rotate(900deg);
+		transform: rotate(900deg);
+		animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+	}
+	to {
+		-webkit-transform: rotate(1800deg);
+		transform: rotate(1800deg)
+	}
+}
+
+@-o-keyframes sp-spin-fast {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+	}
+	50% {
+		-webkit-transform: rotate(900deg);
+		transform: rotate(900deg);
+		animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+	}
+	to {
+		-webkit-transform: rotate(1800deg);
+		transform: rotate(1800deg)
+	}
+}
+
+@-ms-keyframes sp-spin-fast {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		animation-timing-function: cubic-bezier(.55, .055, .675, .19)
+	}
+	50% {
+		-webkit-transform: rotate(900deg);
+		transform: rotate(900deg);
+		animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+	}
+	to {
+		-webkit-transform: rotate(1800deg);
+		transform: rotate(1800deg)
+	}
+}

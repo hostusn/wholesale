@@ -1,0 +1,87 @@
+.helendo-instagram-shortcode {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	a {
+		display: block;
+		position: relative;
+
+		&:after {
+			content: '';
+			background-color: rgba( 79,79,79,0.35 );
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			opacity: 0;
+			transition: 0.5s;
+			z-index: 9;
+		}
+
+		.instagram-icon {
+			width: 56px;
+			height: 56px;
+			line-height: 56px;
+			border-radius: 50%;
+			text-align: center;
+			background-color: rgba( 0,0,0,0.6 );
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate( -50%,-50% );
+			opacity: 0;
+			transition: 0.5s;
+			z-index: 99;
+
+			img {
+				display: inline-block;
+			}
+		}
+
+		&:hover {
+			&:after,
+			.instagram-icon {
+				opacity: 1;
+			}
+		}
+	}
+
+	.helendo-left-arrow,
+	.helendo-right-arrow {
+		font-size: 24px;
+		color: #c2c2c2;
+		transition: 0.5s;
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		z-index: 99;
+		cursor: pointer;
+
+		&:hover {
+			color: #000;
+		}
+	}
+
+	.helendo-left-arrow {
+		left: 35px;
+	}
+
+	.helendo-right-arrow {
+		right: 35px;
+	}
+
+	.slick-dots {
+		position: static;
+		margin-top: 25px;
+	}
+
+	&:hover {
+		.slick-arrow {
+			color: #000;
+		}
+	}
+}

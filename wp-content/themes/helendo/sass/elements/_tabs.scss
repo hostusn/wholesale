@@ -1,0 +1,66 @@
+.helendo-tabs {
+	@-webkit-keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@-moz-keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	
+	.tabs-nav {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
+		
+		li {
+			float: left;
+		}
+		
+		a {
+			display: block;
+		}
+	}
+	
+	.tabs-content {
+		position: relative;
+	}
+	
+	.tabs-panel {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		opacity: 0;
+		transition: opacity 0.2s ease;
+		transform: translateY(10px);
+		
+		&.active {
+			position: relative;
+			z-index: 2;
+			opacity: 1;
+			top: 0;
+			transform: translateY(0);
+			transition: all 0.2s ease;
+			transition-delay: 0.1s;
+		}
+	}
+}

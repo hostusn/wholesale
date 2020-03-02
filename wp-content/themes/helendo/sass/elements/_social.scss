@@ -1,0 +1,36 @@
+.helendo-socials {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	h4 {
+		margin-top: 0;
+		margin-bottom: 15px;
+		font-size: 16px;
+		font-weight: 500;
+		color: $color__darker;
+		margin-right: 25px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0 -13px 15px -13px;
+
+		li {
+			display: inline-block;
+			list-style: none;
+			padding: 0 13px;
+
+			a {
+				font-size: 16px;
+				color: #ccc;
+				transition: .5s;
+
+				&:hover {
+					color: $color__darker;
+				}
+			}
+
+		}
+	}
+}

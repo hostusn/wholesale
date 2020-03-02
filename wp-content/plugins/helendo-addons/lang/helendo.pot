@@ -1,0 +1,496 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Helendo Addons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-17 07:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: inc/shortcodes.php:92
+msgid "days"
+msgstr ""
+
+#: inc/shortcodes.php:93
+msgid "hours"
+msgstr ""
+
+#: inc/shortcodes.php:94
+msgid "minutes"
+msgstr ""
+
+#: inc/shortcodes.php:95
+msgid "seconds"
+msgstr ""
+
+#: inc/shortcodes.php:187
+msgid "Discover More"
+msgstr ""
+
+#: inc/shortcodes.php:188
+msgid "Loading"
+msgstr ""
+
+#: inc/shortcodes.php:297
+#, php-format
+msgid "Continue reading &quot;%s&quot;"
+msgstr ""
+
+#: inc/shortcodes.php:421
+msgid "Read more"
+msgstr ""
+
+#: inc/shortcodes.php:460
+msgid "Watch Project Video"
+msgstr ""
+
+#: inc/shortcodes.php:794
+msgid "Follow us :"
+msgstr ""
+
+#: inc/shortcodes.php:1007
+msgid "Just from"
+msgstr ""
+
+#: inc/shortcodes.php:1036
+msgid "Discover Now"
+msgstr ""
+
+#: inc/shortcodes.php:1038
+msgid "Shop Now"
+msgstr ""
+
+#: inc/shortcodes.php:1123
+msgid "More About Us"
+msgstr ""
+
+#: inc/shortcodes.php:1244 inc/shortcodes.php:1299 inc/shortcodes.php:1593
+msgid "Discover now"
+msgstr ""
+
+#: inc/shortcodes.php:1903 inc/shortcodes.php:2087
+msgid "All Products"
+msgstr ""
+
+#: inc/shortcodes.php:2261 inc/shortcodes.php:2341
+#: inc/widgets/instagram.php:191
+msgid "Unable to communicate with Instagram."
+msgstr ""
+
+#: inc/shortcodes.php:2265 inc/shortcodes.php:2346
+#: inc/widgets/instagram.php:195
+msgid "Instagram did not return a 200."
+msgstr ""
+
+#: inc/shortcodes.php:2273 inc/shortcodes.php:2281 inc/shortcodes.php:2285
+#: inc/shortcodes.php:2353 inc/shortcodes.php:2360 inc/shortcodes.php:2364
+#: inc/widgets/instagram.php:203 inc/widgets/instagram.php:211
+#: inc/widgets/instagram.php:215
+msgid "Instagram has returned invalid data."
+msgstr ""
+
+#: inc/shortcodes.php:2311 inc/shortcodes.php:2390
+#: inc/widgets/instagram.php:261
+msgid "Instagram did not return any images."
+msgstr ""
+
+#: inc/shortcodes.php:2416 inc/shortcodes.php:2424
+msgid "Can not connect to Google Maps APIs"
+msgstr ""
+
+#: inc/shortcodes.php:2442
+msgid "No location found for the entered address."
+msgstr ""
+
+#: inc/shortcodes.php:2444
+msgid "Invalid request. Did you enter an address?"
+msgstr ""
+
+#: inc/shortcodes.php:2446
+msgid ""
+"Something went wrong while retrieving your map, please ensure you have "
+"entered the short code correctly."
+msgstr ""
+
+#: inc/shortcodes.php:2449
+msgid "Unable to contact Google API service."
+msgstr ""
+
+#: inc/user.php:16 inc/widgets/socials.php:24
+msgid "Facebook"
+msgstr ""
+
+#: inc/user.php:17 inc/widgets/socials.php:25
+msgid "Twitter"
+msgstr ""
+
+#: inc/user.php:18 inc/widgets/socials.php:26
+msgid "Google Plus"
+msgstr ""
+
+#: inc/user.php:19 inc/widgets/socials.php:30
+msgid "Pinterest"
+msgstr ""
+
+#: inc/user.php:20
+msgid "Rss"
+msgstr ""
+
+#: inc/widgets/filter-price-list.php:29
+msgid ""
+"Shows a price filter list in a widget which lets you narrow down the list of "
+"shown products when viewing product categories."
+msgstr ""
+
+#: inc/widgets/filter-price-list.php:32
+msgid "Helendo Price Filter List"
+msgstr ""
+
+#: inc/widgets/filter-price-list.php:242 inc/widgets/nav-menu.php:161
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/filter-price-list.php:249
+msgid "Content:"
+msgstr ""
+
+#: inc/widgets/filter-price-list.php:255
+msgid ""
+"Enter the price by format: min_price|max_price. Divide price list with "
+"linebreaks (Enter). Example:"
+msgstr ""
+
+#: inc/widgets/filter-price-list.php:256
+msgid "100|200"
+msgstr ""
+
+#: inc/widgets/filter-price-list.php:256
+msgid "200|300"
+msgstr ""
+
+#: inc/widgets/filter-price-list.php:257
+msgid "300|400"
+msgstr ""
+
+#: inc/widgets/instagram.php:24 inc/widgets/socials.php:32
+msgid "Instagram"
+msgstr ""
+
+#: inc/widgets/instagram.php:32
+msgid "Helendo - Instagram"
+msgstr ""
+
+#: inc/widgets/instagram.php:35
+msgid "Displays your latest Instagram photos."
+msgstr ""
+
+#: inc/widgets/instagram.php:138 inc/widgets/product-cat.php:29
+#: inc/widgets/product-sort-by.php:72 inc/widgets/product-tag.php:29
+#: inc/widgets/socials.php:110 inc/widgets/widget-layered-nav-filters.php:31
+#: inc/widgets/woo-attributes-filter.php:78
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/instagram.php:145
+msgid "@username or #tag"
+msgstr ""
+
+#: inc/widgets/instagram.php:152
+msgid "Number of photos"
+msgstr ""
+
+#: inc/widgets/instagram.php:159
+msgid "Open links in"
+msgstr ""
+
+#: inc/widgets/instagram.php:163
+msgid "Current window (_self)"
+msgstr ""
+
+#: inc/widgets/instagram.php:164
+msgid "New window (_blank)"
+msgstr ""
+
+#: inc/widgets/instagram.php:227
+msgid "Instagram Image"
+msgstr ""
+
+#: inc/widgets/language-currency.php:14
+msgid ""
+"Shows language list by WPML plugin and currency list by WooCommerce Currency "
+"Switcher plugin"
+msgstr ""
+
+#: inc/widgets/language-currency.php:17
+msgid "Helendo Language & Currency"
+msgstr ""
+
+#: inc/widgets/language-currency.php:99
+msgid "Language Text:"
+msgstr ""
+
+#: inc/widgets/language-currency.php:105
+msgid "Currency Text:"
+msgstr ""
+
+#: inc/widgets/language-currency.php:112
+msgid "Type:"
+msgstr ""
+
+#: inc/widgets/language-currency.php:115
+msgid "Code"
+msgstr ""
+
+#: inc/widgets/language-currency.php:116 inc/widgets/socials.php:117
+msgid "Description"
+msgstr ""
+
+#: inc/widgets/language-currency.php:121
+msgid "Show:"
+msgstr ""
+
+#: inc/widgets/language-currency.php:124
+msgid "Default"
+msgstr ""
+
+#: inc/widgets/language-currency.php:125
+msgid "Only Currency"
+msgstr ""
+
+#: inc/widgets/language-currency.php:126
+msgid "Only Language"
+msgstr ""
+
+#: inc/widgets/nav-menu.php:27
+msgid "Helendo - Navigation"
+msgstr ""
+
+#: inc/widgets/nav-menu.php:30
+msgid "Add a custom menu to your sidebar."
+msgstr ""
+
+#: inc/widgets/nav-menu.php:155
+#, php-format
+msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
+msgstr ""
+
+#: inc/widgets/nav-menu.php:168
+msgid "Select Menu:"
+msgstr ""
+
+#: inc/widgets/nav-menu.php:171
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: inc/widgets/nav-menu.php:180
+msgid "Display:"
+msgstr ""
+
+#: inc/widgets/nav-menu.php:187
+msgid "Vertical"
+msgstr ""
+
+#: inc/widgets/nav-menu.php:188
+msgid "Horizontal"
+msgstr ""
+
+#: inc/widgets/nav-menu.php:196
+msgid "Edit Menu"
+msgstr ""
+
+#: inc/widgets/product-cat.php:22
+msgid "A list of product categories."
+msgstr ""
+
+#: inc/widgets/product-cat.php:24
+msgid "Helendo Product Categories"
+msgstr ""
+
+#: inc/widgets/product-cat.php:28
+msgid "Product Categories"
+msgstr ""
+
+#: inc/widgets/product-cat.php:35 inc/widgets/product-tag.php:35
+msgid "Style 1"
+msgstr ""
+
+#: inc/widgets/product-cat.php:36 inc/widgets/product-tag.php:36
+msgid "Style 2"
+msgstr ""
+
+#: inc/widgets/product-cat.php:38 inc/widgets/product-tag.php:38
+msgid "Style"
+msgstr ""
+
+#: inc/widgets/product-cat.php:43 inc/widgets/woo-attributes-filter.php:98
+msgid "Height"
+msgstr ""
+
+#: inc/widgets/product-cat.php:126 inc/widgets/product-tag.php:95
+msgid "All"
+msgstr ""
+
+#. %s: product count
+#: inc/widgets/product-cat.php:152 inc/widgets/product-tag.php:127
+#, php-format
+msgid "%s product"
+msgid_plural "%s products"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/widgets/product-sort-by.php:14
+msgid "Helendo - Product Sort By"
+msgstr ""
+
+#: inc/widgets/product-sort-by.php:17
+msgid "Sort Product By"
+msgstr ""
+
+#: inc/widgets/product-tag.php:22
+msgid "Your most used product tags in cloud format."
+msgstr ""
+
+#: inc/widgets/product-tag.php:24
+msgid "Helendo Product Tags"
+msgstr ""
+
+#: inc/widgets/product-tag.php:28
+msgid "Product Tags"
+msgstr ""
+
+#: inc/widgets/socials.php:27
+msgid "Youtube"
+msgstr ""
+
+#: inc/widgets/socials.php:28
+msgid "Tumblr"
+msgstr ""
+
+#: inc/widgets/socials.php:29
+msgid "Linkedin"
+msgstr ""
+
+#: inc/widgets/socials.php:31
+msgid "Flickr"
+msgstr ""
+
+#: inc/widgets/socials.php:33
+msgid "Dribbble"
+msgstr ""
+
+#: inc/widgets/socials.php:34
+msgid "Skype"
+msgstr ""
+
+#: inc/widgets/socials.php:35
+msgid "RSS"
+msgstr ""
+
+#: inc/widgets/socials.php:51
+msgid "Helendo - Social Links"
+msgstr ""
+
+#: inc/widgets/socials.php:54
+msgid "Display links to social media networks."
+msgstr ""
+
+#: inc/widgets/socials.php:131
+msgid "URL"
+msgstr ""
+
+#: inc/widgets/widget-layered-nav-filters.php:24
+msgid "Display a list of active product filters."
+msgstr ""
+
+#: inc/widgets/widget-layered-nav-filters.php:26
+msgid "Helendo - Active Product Filters"
+msgstr ""
+
+#: inc/widgets/widget-layered-nav-filters.php:30
+msgid "Active filters"
+msgstr ""
+
+#: inc/widgets/widget-layered-nav-filters.php:167
+#: inc/widgets/widget-layered-nav-filters.php:174
+#: inc/widgets/widget-layered-nav-filters.php:179
+#: inc/widgets/widget-layered-nav-filters.php:186
+#: inc/widgets/widget-layered-nav-filters.php:197
+msgid "Remove filter"
+msgstr ""
+
+#: inc/widgets/widget-layered-nav-filters.php:174
+#, php-format
+msgid "Min %s"
+msgstr ""
+
+#: inc/widgets/widget-layered-nav-filters.php:179
+#, php-format
+msgid "Max %s"
+msgstr ""
+
+#: inc/widgets/widget-layered-nav-filters.php:186
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: inc/widgets/widget-layered-nav-filters.php:202
+msgid "Remove all filters"
+msgstr ""
+
+#: inc/widgets/woo-attributes-filter.php:25
+msgid ""
+"Shows a custom attribute in a widget which lets you narrow down the list of "
+"products when viewing product categories."
+msgstr ""
+
+#: inc/widgets/woo-attributes-filter.php:27
+msgid "Helendo Attributes Filter"
+msgstr ""
+
+#: inc/widgets/woo-attributes-filter.php:77
+msgid "Filter by"
+msgstr ""
+
+#: inc/widgets/woo-attributes-filter.php:83
+msgid "Attribute"
+msgstr ""
+
+#: inc/widgets/woo-attributes-filter.php:89
+msgid "Query type"
+msgstr ""
+
+#: inc/widgets/woo-attributes-filter.php:91
+msgid "AND"
+msgstr ""
+
+#: inc/widgets/woo-attributes-filter.php:92
+msgid "OR"
+msgstr ""
+
+#. Name of the plugin
+msgid "Helendo Addons"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Extra elements for WPBakery Page Builder. It was built for Helendo theme."
+msgstr ""
+
+#. URI of the plugin
+msgid "http://drfuri.com/plugins/helendo-addons.zip"
+msgstr ""
+
+#. Author of the plugin
+msgid "Grixbase"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://drfuri.com/"
+msgstr ""

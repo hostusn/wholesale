@@ -1,0 +1,72 @@
+.helendo-latest-post {
+	.blog-wapper {
+		margin-bottom: 0;
+	}
+
+	.hl-latest-post__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 63px;
+
+		h3 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: 500;
+		}
+
+		i {
+			color: #000;
+		}
+	}
+
+	.entry-content {
+		display: none;
+	}
+
+	&.blog-grid-style-1{
+		.hl-latest-post__header{
+			display: block;
+			margin-bottom: 50px;
+
+			h3{
+				position: relative;
+				padding-bottom: 9px;
+
+				&:after{
+					content: '';
+					background-color: #dcb14a;
+					width: 70px;
+					height: 4px;
+					position: absolute;
+					bottom: 0;
+				}
+			}
+		}
+
+	}
+
+	&.blog-grid-text-left{
+		h3{
+			&:after{
+				left: 0;
+			}
+		}
+	}
+	&.blog-grid-text-center{
+		h3{
+			&:after{
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+		}
+	}
+	&.blog-grid-text-right{
+		h3{
+			&:after{
+				right: 0;
+			}
+		}
+	}
+}

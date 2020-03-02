@@ -1,0 +1,97 @@
+.header-cart,
+.header-wishlist {
+	.header-right-items & {
+		margin-right: 5px;
+	}
+
+	> a {
+		display: block;
+		line-height: 1;
+		white-space: nowrap;
+		color: #000;
+		@include font-size(24/16);
+		position: relative;
+	}
+
+	.counter {
+		@include font-size(14/16);
+		vertical-align: 0.3em;
+		position: absolute;
+		min-width: 19px;
+		height: 19px;
+		background-color: $color__primary;
+		text-align: center;
+		line-height: 19px;
+		border-radius: 19px;
+		bottom: -5px;
+		right: -10px;
+		padding: 0 5px;
+	}
+
+	.woocommerce-mini-cart__empty-message {
+		text-align: center;
+	}
+}
+
+.header-wishlist {
+	.counter {
+		right: -8px;
+	}
+}
+
+.header-cart.hover-action {
+	.widget-canvas-content {
+		&:before {
+			content: '';
+			position: absolute;
+			background-color: #fff;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 20px;
+			z-index: 10;
+		}
+	}
+}
+
+.helendo-container {
+	.header-cart.hover-action {
+		.mini-cart {
+			transform: translateX(0) scaleX(0);
+
+			.mini-cart__arrow {
+				transform: translateX(0) rotate(135deg);
+			}
+		}
+
+		&:hover .mini-cart {
+			transform: translateX(0) scaleX(1);
+		}
+	}
+
+	.header-right-items {
+		.header-cart.hover-action {
+			.mini-cart {
+				right: -40px;
+				left: auto;
+
+				.mini-cart__arrow {
+					left: auto;
+					right: 45px;
+				}
+			}
+		}
+	}
+
+	.header-left-items {
+		.header-cart.hover-action {
+			.mini-cart {
+				left: -40px;
+
+				.mini-cart__arrow {
+					left: 45px;
+				}
+			}
+		}
+	}
+}

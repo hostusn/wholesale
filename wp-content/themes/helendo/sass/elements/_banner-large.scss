@@ -1,0 +1,29 @@
+.helendo_banners_large {
+	clear: both;
+	.banner-wrapper {
+		.title {
+			margin: 0;
+			font-size: 48px;
+			span {
+				color: #c90000;
+				text-transform: uppercase;
+			}
+		}
+		.description {
+			margin: 0;
+			font-size: 18px;
+			line-height: 24px;
+		}
+		.read-more {
+			margin-top: 53px;
+			display: inline-block;
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: 600;
+			color: $color__darker;
+			span {
+				font-size: 14px;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.helendo-product-shortcode {
+	.product-item {
+		.inside-content {
+			.image-product {
+				overflow: hidden;
+				img {
+					transition: .5s;
+				}
+			}
+
+			.title {
+				font-size: 20px;
+				line-height: 30px;
+				margin-top: 27px;
+				margin-bottom: 0;
+				position: relative;
+				z-index: 4;
+			}
+
+			.content-product {
+				margin: 0;
+				font-size: 18px;
+				line-height: 30px;
+				position: relative;
+				z-index: 4;
+			}
+
+			&:hover {
+				.image-product {
+					img {
+						transform: scale(1.03);
+					}
+				}
+			}
+		}
+	}
+	.inside-content {
+		width: fit-content;
+	}
+	.conten-align-right {
+		float: right;
+	}
+	.conten-align-center {
+		float: none;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,41 @@
+.header-mobile {
+	.mobile-header-icons {
+		flex: 1;
+	}
+
+	&.logo-left {
+		.mobile-header-icons--left {
+			display: none;
+		}
+	}
+}
+
+.mobile-header-icons {
+	> div {
+		margin: 0 20px;
+	}
+}
+
+.mobile-header-icons--left {
+	> div {
+		margin-left: 0;
+	}
+
+	.header-cart {
+		margin-left: 7px;
+	}
+}
+
+.mobile-header-icons--right {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	> div {
+		margin-right: 0;
+	}
+
+	.header-cart {
+		margin-right: 7px;
+	}
+}

@@ -1,0 +1,68 @@
+.topbar {
+	@include font-size(14/16);
+    height: 40px;
+    position: relative;
+    z-index: 1000;
+
+	.konte-container-fluid {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	&.dark {
+		background-color: $color__darker;
+	}
+
+	&.light {
+		background-color: $color__lighter;
+	}
+
+	.list-dropdown {
+		.current {
+			padding-bottom: 0;
+
+			&:before,
+			&:after {
+				display: none;
+			}
+		}
+
+		ul {
+			margin-top: 13px;
+		}
+	}
+
+	.close-topbar {
+		cursor: pointer;
+	}
+}
+
+.topbar-items {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.topbar-left-items {
+	> * {
+		margin-right: 40px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.topbar-right-items {
+	text-align: right;
+	justify-content: flex-end;
+
+	> * {
+		margin-left: 40px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include btn-primary();
+
+	&.alt {
+		color: $color__dark;
+		border: 1px solid $color__dark;
+		background: transparent;
+
+		&:hover {
+			color: #fff;
+			background: $color__dark;
+		}
+	}
+}

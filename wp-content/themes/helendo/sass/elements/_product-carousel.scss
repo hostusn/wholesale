@@ -1,0 +1,335 @@
+.helendo-products-grid,
+.helendo-products-carousel {
+	.product-header {
+		text-align: center;
+		padding: 0 15px;
+		margin-bottom: 70px;
+
+		.filter {
+			padding: 0;
+			width: fit-content;
+
+			li {
+				list-style: none;
+				float: left;
+				color: $color__darker;
+
+				span {
+					padding: 0 17px;
+					border-right: 1px solid $color__darker;
+					line-height: 12px;
+					cursor: pointer;
+					display: block;
+				}
+
+				&:last-child {
+					span {
+						border-right: none;
+						padding-right: 0;
+					}
+				}
+
+				&:hover,
+				&.active {
+					color: $color__link-hover;
+				}
+			}
+		}
+	}
+
+	.product-wrapper {
+		clear: both;
+		position: relative;
+
+		.woocommerce-result-count,
+		.woocommerce-ordering,
+		.woocommerce-pagination {
+			display: none;
+		}
+
+		ul.products {
+			margin-top: 70px;
+		}
+		.product-loading {
+			position: absolute;
+			top: 75px;
+		}
+	}
+
+	.load-more {
+		display: none;
+		text-align: center;
+		padding-bottom: 50px;
+
+		.ajax-load-products {
+			position: relative;
+			display: inline-block;
+
+			.button-text {
+				padding: 10px 30px;
+				background-color: $color__darker;
+				color: $color__lighter;
+				border: 1px solid transparent;
+
+				&:hover {
+					color: $color__darker;
+					background-color: transparent;
+					border-color: $color__darker;
+				}
+
+			}
+
+			.loading-icon {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				text-align: center;
+				display: none;
+				vertical-align: middle;
+				opacity: 0;
+				transition: .5s;
+				z-index: -999;
+				font-size: 24px;
+				color: #222;
+			}
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	.slick-dots {
+		position: static;
+	}
+}
+
+.helendo-products-grid {
+	.product-header {
+		margin-bottom: 70px;
+
+		.section-title {
+			margin-bottom: 35px;
+			.title {
+				margin-top: 0;
+			}
+		}
+
+	}
+	.woocommerce {
+		ul.products {
+			min-width: 100%;
+			margin-top: 0;
+			li {
+				&.product {
+					margin-bottom: 54px;
+				}
+			}
+		}
+	}
+
+	a.ajax-load-products.loading {
+		.button-text {
+			opacity: 0;
+		}
+		.loading-icon {
+			opacity: 1;
+			z-index: 99;
+			display: block;
+		}
+		.loading-icon {
+			.su-icon {
+				animation: spin 0.3s infinite linear;
+				display: inline-block;
+				font-size: 24px;
+			}
+		}
+	}
+	&.loading {
+		.product-wrapper {
+			.product-loading {
+				top:0;
+			}
+		}
+	}
+	&.style-1 {
+		.filter {
+			margin: 0 auto;
+		}
+	}
+	&.style-2 {
+		.product-header {
+			.section-title {
+				margin-bottom: 0;
+				.title {
+					margin: 0;
+					font-size: 36px;
+				}
+			}
+			.nav-filter {
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+}
+
+.loading {
+	.product-wrapper {
+		position: relative;
+		.product-loading {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-color: #fff;
+			opacity: 1;
+			z-index: 99;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.helendo-loader {
+				&:after {
+					position: absolute;
+					top: 0;
+					left: 50%;
+					background-image: none;
+					z-index: 99;
+					color: transparent !important;
+					font-size: 0;
+					border-width: 1px;
+					border-color: $color__dark $color__dark $color__dark transparent;
+					border-radius: 50%;
+					border-style: solid;
+					animation: spin 0.3s linear infinite;
+					content: "";
+					width: 20px;
+					height: 20px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+	.woocommerce {
+		opacity: 0;
+	}
+}
+
+.helendo-products-carousel {
+	ul.products {
+		display: block;
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 125px;
+		z-index: 99;
+		font-size: 24px;
+		cursor: pointer;
+		color: #bcbcbc;
+		transition: .5s;
+		&:hover {
+			color: $color__dark;
+		}
+	}
+	.slick-arrow.helendo-left-arrow {
+		left: -31px;
+	}
+	.product-header {
+		clear: both;
+		margin-bottom: 55px;
+	}
+	.slick-arrow.helendo-right-arrow {
+		right: -31px;
+	}
+	&.style-1 {
+		.section-title {
+			.title {
+				margin: 0;
+			}
+		}
+	}
+
+	&.style-2 {
+		.section-title {
+			text-align: center;
+			.title {
+				margin-bottom: 40px;
+				margin-top: 0;
+			}
+		}
+		.nav-filter {
+			float: none;
+			margin: 0 auto;
+			width: fit-content;
+		}
+		ul.products {
+			clear: both;
+			margin-top: 40px;
+			li {
+				margin-right: 0;
+			}
+		}
+		ul.products li.product.first {
+			clear: none;
+		}
+	}
+}
+
+.helendo-products-carousel.style-1,
+.helendo-products-grid.style-2 {
+	.product-header {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 53px;
+
+	}
+
+	.section-title {
+		float: left;
+		width: fit-content;
+	}
+
+	.nav-filter {
+		float: right;
+		width: fit-content;
+		margin-top: 50px;
+
+		li{
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+
+	ul.products {
+		margin-top: 25px;
+		li {
+			margin-right: 0;
+		}
+	}
+
+	ul.products li.product.first {
+		clear: none;
+	}
+}
+.nav-filter {
+	li {
+		transition: .5s;
+	}
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+

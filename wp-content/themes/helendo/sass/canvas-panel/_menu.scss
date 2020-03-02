@@ -1,0 +1,175 @@
+.menu-sidebar {
+	.widget {
+		line-height: 2;
+		transition: 0.35s;
+		opacity: 0;
+		transition-delay: 0s;
+		color: #999;
+		transform: translateY(50px);
+		margin-bottom: 63px;
+	}
+
+	ul.menu {
+		padding: 0;
+		margin: 0;
+
+		li {
+			padding: 8px 0;
+			list-style: none;
+
+			a {
+				font-size: 18px;
+				display: block;
+				font-weight: 500;
+				text-transform: uppercase;
+				position: relative;
+				color: #000;
+
+				.toggle-menu-children {
+					position: absolute;
+					line-height: 1;
+					right: 0;
+					top: 10px;
+				}
+
+				&:after {
+					display: none;
+				}
+
+				&:hover {
+					color: #666666;
+				}
+			}
+
+			&.menu-item-has-children {
+				a {
+					padding-right: 20px;
+				}
+			}
+
+			&.active > a {
+				color: #666666;
+			}
+		}
+
+		.sub-menu {
+			display: none;
+			padding-left: 16px;
+			margin: 14px 0 25px;
+
+			li {
+				line-height: 1;
+				padding: 7px 0;
+
+				a {
+					font-size: 16px;
+					color: #999999;
+					text-transform: capitalize;
+					font-weight: 400;
+
+					.toggle-menu-children {
+						top: 1px;
+					}
+
+					&:hover {
+						color: #000;
+					}
+				}
+
+				&.active > a {
+					color: #000;
+				}
+
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+
+			.sub-menu {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.widget-title {
+		padding-bottom: 22px;
+		font-size: 16px;
+	}
+
+	.helendo-language-currency {
+		margin-top: 0;
+		align-items: flex-start;
+
+		.list-dropdown {
+			height: auto;
+			padding: 0;
+			display: block;
+
+			&:after {
+				display: none;
+			}
+		}
+
+		h4 {
+			font-size: 16px;
+			font-weight: 500;
+			margin-top: 0;
+			margin-bottom: 12px;
+			line-height: 1;
+		}
+
+		.widget-currency span.current {
+			transform: translateX(0);
+			display: none;
+		}
+
+		ul {
+			position: static;
+			transform: none;
+			border: 0;
+			padding: 0;
+
+			a {
+				color: #999999;
+				opacity: 1;
+				height: auto;
+				padding: 0;
+
+				&:hover {
+					color: $color__primary;
+				}
+			}
+
+			li {
+				padding: 2px 0;
+
+				&.actived {
+					a {
+						color: $color__primary;
+					}
+				}
+			}
+		}
+	}
+
+	&.open {
+
+		$loop: 10;
+		@while $loop > 0 {
+			.widget:nth-child(#{$loop}) {
+				transition-delay: $loop * 0.1s + 0.1s;
+			}
+
+			$loop: $loop - 1;
+		}
+
+		.widget {
+			transform: translateY(0);
+			opacity: 1;
+
+			&:first-child {
+				transition-delay: 0.1s;
+			}
+		}
+	}
+}

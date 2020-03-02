@@ -1,0 +1,65 @@
+.login-modal {
+	background-color: transparent;
+	.helendo-off-login-layer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 10;
+		background-color: rgba(0, 0, 0, 0.15);
+		
+	}
+	
+	.modal-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 20;
+		width: 450px;
+		
+		.col-login,
+		.container {
+			width: 100%;
+			margin: 0;
+		}
+		
+		.helendo-tabs {
+			background-color: $color__lighter;
+			width: 100%;
+			
+			.tabs-nav {
+				display: flex;
+				align-items: center;
+				margin-bottom: 0;
+				li {
+					width: 50%;
+					a {
+						color: #666;
+						font-size: 20px;
+						font-weight: 500;
+						padding: 15px 0;
+						background-color: #ededed;
+						
+						&.active {
+							background-color: $color__lighter;
+							color: $color__darker;
+						}
+						
+					}
+					
+				}
+			}
+			
+			.tabs-content {
+				padding: 40px 40px 30px;
+			}
+			
+			.tabs-panel form {
+				min-height: auto;
+			}
+		}
+		
+	}
+}

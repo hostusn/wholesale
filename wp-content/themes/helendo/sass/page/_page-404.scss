@@ -1,0 +1,66 @@
+.error404 {
+	.error-404 {
+		text-align: center;
+
+		.icon {
+			font-size: 63px;
+			color:$color__primary;
+		}
+		.page-title {
+			font-size: 48px;
+			margin-top: 15px;
+			margin-bottom: 25px;
+		}
+		.description {
+			font-size: 18px;
+			margin-top: 0;
+			color: #999999;
+			margin-bottom: 60px;
+			a {
+				color:$color__primary;
+				font-weight: 500;
+				border-bottom: 1px solid;
+			}
+		}
+		.search {
+			max-width: 370px;
+			margin: 0 auto;
+
+			.search-form {
+				position: relative;
+				width: 100%;
+
+				.search-field {
+					border: 1px solid #d9d9d9;
+					padding: 13px 15px;
+					border-radius: 0;
+					background-color: transparent;
+					border-right: none;
+				}
+
+				.search-submit {
+					right: 0;
+					border: 1px solid #d9d9d9;
+					border-left: none;
+
+					&:hover {
+						background: transparent;
+					}
+				}
+
+				&:after {
+					color:#000;
+					font-weight: 600;
+					right: 15px;
+				}
+			}
+		}
+
+	}
+}
+.error404 {
+	.site-content {
+		padding-top: 205px;
+		padding-bottom: 225px;
+	}
+}

@@ -1,0 +1,46 @@
+.helendo-image-carousel {
+	.slick-arrow {
+		position: absolute;
+		top: calc(50% - 20px);
+		z-index: 99;
+		font-size: 24px;
+		cursor: pointer;
+		transition: .5s;
+		opacity: 0.9;
+		&:hover {
+			color: #000;
+			opacity: 1;
+		}
+	}
+	.helendo-left-arrow {
+		left: -48px;
+	}
+	.helendo-right-arrow {
+		right: -48px;
+	}
+	.item-img {
+		a {
+			img {
+				opacity: 0.35;
+				transition: .5s;
+			}
+
+			&:hover {
+				img {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.slick-dots {
+		position: static;
+		margin-top: 10px;
+	}
+}
+
+.helendo-image-carousel__mobile-1-columns {
+	img {
+		margin: auto;
+	}
+}

@@ -1,0 +1,51 @@
+.helendo-button-group {
+	clear: both;
+
+	.helendo-button {
+		display: inline-block;
+		font-weight: 500;
+		font-family: $font__main;
+		font-size: 16px;
+		transition: .5s;
+	}
+	&.helendo-button-classic {
+		.helendo-button {
+			background-color: $color__darker;
+			color: $color__lighter;
+			border: 1px solid $color__darker;
+			padding: 0 30px;
+			line-height: 40px;
+		}
+	}
+	&.helendo-button-flat {
+		.helendo-button {
+			border: 1px solid $color__darker;
+			color: $color__darker;
+			background-color: transparent;
+			padding: 0 30px;
+			line-height: 40px;
+			&:hover {
+				background-color: $color__darker;
+				color: $color__lighter;
+				border: 1px solid $color__darker;
+			}
+		}
+	}
+
+	i {
+		font-size: 14px;
+	}
+
+}
+
+.helendo-align-right {
+	.helendo-button {
+		float: right;
+	}
+}
+
+.helendo-align-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

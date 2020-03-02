@@ -1,0 +1,50 @@
+body.page-template-template-home-left-sidebar {
+	margin-left: 300px;
+}
+
+.page-template-template-home-boxed {
+	background-color: #f4f5f7;
+
+	.site {
+		max-width: 1330px;
+		margin: auto;
+		background-color: #fff;
+	}
+}
+
+.site-content {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	.helendo-page-template & {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+.container {
+	padding-left: 0;
+	padding-right: 0;
+	
+	.container {
+		width: 100%;
+	}
+}
+
+.helendo-container {
+	margin-left: 100px;
+	margin-right: 100px;
+	width: auto;
+}
+
+.helendo-container-full-width {
+	margin-left: 120px;
+	margin-right: 120px;
+	width: auto;
+}
+
+.sidebar-content {
+	.content-area {
+		float: right;
+	}
+}

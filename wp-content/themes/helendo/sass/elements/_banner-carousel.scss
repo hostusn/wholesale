@@ -1,0 +1,121 @@
+.helendo_banners_carousel {
+	min-height: 200px;
+	@include helendo-loading();
+
+	&.slider-loaded {
+		min-height: auto;
+
+		.banner-wrapper,
+		.slider-arrows {
+			display: block;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.slider-arrows {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+
+		.container {
+			position: relative;
+		}
+
+		.helendo-left-arrow {
+			left: -65px;
+		}
+
+		.helendo-right-arrow {
+			right: -65px;
+		}
+	}
+
+	.banner-item {
+		position: relative;
+		margin-left: 55px;
+		margin-right: 55px;
+
+		.banner-wrapper {
+			position: absolute;
+			z-index: 99;
+			top: 50%;
+			left: 120px;
+			transform: translateY(-50%);
+
+			.title {
+				margin: 0;
+				font-size: 55px;
+				color: $color__darker;
+				line-height: 1.1;
+			}
+
+			.description {
+				font-size: 16px;
+				line-height: 24px;
+				color: $color__link-hover;
+				max-width: 420px;
+				margin-top: 38px;
+				margin-bottom: 24px;
+			}
+
+			.read-more {
+				font-size: 18px;
+				margin-top: 45px;
+				display: inline-block;
+				transition: 0.5s;
+				font-weight: 500;
+				color: #000;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.slick-arrow {
+		position: absolute;
+		z-index: 99;
+		font-size: 30px;
+		cursor: pointer;
+	}
+}
+
+.helendo_banners_carousel.helendo_banners_carousel-style-2 {
+
+	.banner-item {
+		.banner-wrapper {
+			padding-left: 166px;
+			.title {
+				font-size: 48px;
+				line-height: 55px;
+			}
+			.description {
+				margin-top: 0;
+				font-size: 18px;
+				line-height: 45px;
+			}
+			.read-more {
+				margin-top: 65px;
+			}
+		}
+	}
+
+	.helendo-left-arrow {
+		left: 70px !important;
+		.icon-arrow-left {
+			&:before {
+				content: '\e93b' !important;
+			}
+		}
+	}
+	.helendo-right-arrow {
+		right: 70px !important;
+		.icon-arrow-right {
+			&:before {
+				content: '\e93c' !important;
+			}
+		}
+	}
+}

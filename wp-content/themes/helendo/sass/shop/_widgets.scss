@@ -1,0 +1,387 @@
+.catalog-sidebar {
+	.widget {
+		margin: 0 0 50px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid #d7d7d7;
+
+		&:last-child {
+			padding-bottom: 0;
+			margin-bottom: 0;
+			border-bottom: 0;
+		}
+	}
+
+	.helendo_attributes_filter,
+	.helendo_widget_product_categories {
+		ul {
+			&.scroll-enable {
+				overflow-y: scroll;
+				padding-right: 20px;
+
+				/* width */
+				&::-webkit-scrollbar {
+					width: 4px;
+				}
+
+				/* Track */
+				&::-webkit-scrollbar-track {
+					background: transparent;
+				}
+
+				/* Handle */
+				&::-webkit-scrollbar-thumb {
+					background: #d7d7d7;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
+}
+
+ul.product_list_widget {
+	li {
+		padding: 10px 0;
+
+		&:before {
+			@include clearfix();
+		}
+
+		&:after {
+			@include clearfix();
+			@include clearfix-after();
+		}
+
+		img {
+			float: left;
+			margin-right: 20px;
+			width: 70px;
+			margin-left: 0;
+		}
+
+		a {
+			font-size: 15px;
+			font-weight: 600;
+			color: #000;
+			display: inherit;
+			margin-bottom: 5px;
+			line-height: 1.4;
+		}
+	}
+
+	.product-title {
+		font-size: 15px;
+		font-weight: 600;
+		color: #000;
+		display: inherit;
+		margin-bottom: 5px;
+		line-height: 1.2;
+	}
+
+	ins {
+		background-color: transparent;
+	}
+
+	.woocommerce-Price-amount {
+		font-size: 14px;
+		font-weight: 400;
+		color: #666;
+		text-decoration-color: #bbbbbb;
+	}
+}
+
+.widget_product_search {
+	.woocommerce-product-search {
+		position: relative;
+
+		&:after {
+			content: '\e922';
+			@include font-size(20/16);
+			color: #000;
+			font-family: Linearicons;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			padding-left: 5px;
+		}
+	}
+
+	label {
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.search-field {
+		width: 100%;
+		padding: 10px 35px 10px 0;
+		border-width: 0 0 1px 0;
+		border-color: rgba(0, 0, 0, 0.25);
+		background-color: transparent;
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+	}
+
+	button,
+	input[type="submit"] {
+		width: 44px;
+		height: 44px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		padding: 0;
+		text-indent: -9999px;
+		background-color: transparent;
+		z-index: 99;
+
+		&:hover,
+		&:focus,
+		&:active,
+		&:active:hover,
+		&:active:focus {
+			background-color: transparent;
+		}
+	}
+}
+
+/**
+ * WooCommerce Price Filter
+ */
+.widget_price_filter {
+	.price_slider {
+		margin-bottom: 10px;
+	}
+
+	.price_slider_amount {
+		color: #999999;
+		text-align: left;
+		line-height: 2.4em;
+
+		.button {
+			display: none;
+		}
+	}
+
+	.ui-slider {
+		position: relative;
+		text-align: left;
+	}
+
+	.ui-slider .ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		cursor: ew-resize;
+		outline: none;
+		background: $color__link;
+		box-sizing: border-box;
+		margin-top: -.25em;
+		opacity: 1;
+		width: 3px;
+		height: 11px;
+		background: #666666;
+
+		&:last-child {
+			margin-left: -3px;
+		}
+	}
+
+	.ui-slider .ui-slider-range {
+		position: absolute;
+		z-index: 1;
+		display: block;
+		border: 0;
+		background: $color__primary;
+	}
+
+	.price_slider_wrapper .ui-widget-content {
+		background: #cdcdcd;
+	}
+
+	.ui-slider-horizontal {
+		height: 3px;
+		background: #cdcdcd;
+	}
+
+	.ui-slider-horizontal .ui-slider-range {
+		height: 100%;
+	}
+}
+
+.helendo_widget_product_categories {
+	ul {
+		li {
+			display: flex;
+			justify-content: space-between;
+			color: #999999;
+			transition: 0.5s;
+
+			a {
+				color: #999999;
+			}
+
+			&:hover,
+			&.chosen {
+				color: #000;
+
+				a {
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+.helendo_attributes_filter {
+	ul {
+		li {
+			display: flex;
+			justify-content: space-between;
+			color: #999999;
+			transition: 0.5s;
+
+			a {
+				color: #999999;
+			}
+
+			&:hover,
+			&.chosen {
+				color: #000;
+
+				a {
+					color: #000;
+				}
+			}
+
+			&.show-color {
+				display: inline-block;
+				padding: 7px 9px;
+
+				a {
+					width: 34px;
+					height: 34px;
+					border-radius: 50%;
+					background-color: transparent;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+				.swatch-color {
+					width: 24px;
+					height: 24px;
+					border-radius: 50%;
+					display: inline-block;
+					position: relative;
+					opacity: 0.5;
+
+					&:before {
+						content: '\4e';
+						font-family: ElegantIcons;
+						color: #ffffff;
+						@include font-size(14/16);
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate( -50%,-50% );
+						opacity: 0;
+					}
+				}
+
+				.nav-title,
+				.count {
+					display: none;
+				}
+
+				&.chosen {
+					a {
+						background-color: rgba( 203,203,203,0.3 );
+					}
+
+					.swatch-color {
+						opacity: 1;
+
+						&:before {
+							opacity: 1;
+						}
+					}
+				}
+			}
+
+			&.show-label {
+				display: inline-block;
+				padding: 5px;
+
+				a {
+					display: inline-block;
+					text-align: center;
+					padding: 0 10px;
+					border: 1px solid #d7d7d7;
+
+					&:hover {
+						border-color: #000;
+					}
+				}
+
+				.count {
+					display: none;
+				}
+
+				&.chosen {
+					a {
+						border-color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+.widget_product_tag_cloud {
+	.tagcloud {
+		margin: 0;
+
+		a {
+			color: #999;
+			margin: 0;
+			padding: 0;
+			background-color: transparent;
+
+			&:hover,
+			&.selected {
+				background-color: transparent;
+				color: #000;
+			}
+
+			&:after {
+				content: ',';
+				margin: 0;
+				position: static;
+				background-color: transparent;
+			}
+
+			&:last-child {
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.helendo-price-filter-list {
+	ul {
+		li {
+			a {
+				color: #999;
+
+				&.actived,
+				&:hover {
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+.widget_layered_nav_filters {
+
+}
